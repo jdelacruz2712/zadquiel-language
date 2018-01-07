@@ -1,0 +1,37 @@
+{
+    "name": "zadquiel/language",
+    "description": "Switcher language for Laravel 5.*",
+    "keywords": ["laravel", "language", "switcher"],
+    "authors": [
+        {
+            "name": "Jeancarlos De la Cruz",
+            "email": "jdelacruz2712@gmail.com",
+            "homepage": "http://securitec.pe",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": ">=5.4.0",
+        "consoletvs/identify": "1.*"
+    },
+    "autoload": {
+		"psr-4": {
+			"Zadquiel\\Language\\": "./src"
+		},
+        "files": [
+            "src/helpers.php"
+        ]
+	},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zadquiel\\Language\\Provider"
+            ],
+            "aliases": {
+                "Language": "Zadquiel\\Language\\Facade"
+            }
+        }
+    }
+}
